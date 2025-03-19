@@ -110,12 +110,12 @@ TEST(MinDistTest, ForkedGraph) {
   int32_t n = 6;
   int32_t start = 0;
   std::vector<std::vector<int32_t>> graph = {
-      {1},        // 0
-      {0, 2, 3},  // 1
-      {1, 4},     // 2
-      {1, 5},     // 3
-      {2},        // 4
-      {3}         // 5
+      {1},
+      {0, 2, 3},
+      {1, 4},
+      {1, 5},
+      {2}, 
+      {3}
   };
   std::vector<int32_t> expected = {0, 1, 2, 2, 3, 3};
   std::vector<int32_t> result = bfs(n, start, graph);
